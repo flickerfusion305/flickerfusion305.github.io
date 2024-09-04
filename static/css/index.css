@@ -156,10 +156,3 @@ body {
   height: auto; 
   object-fit: cover;
 }
-
-.publication-video.is-large-video {
-  max-width: 80%;
-  max-height: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
