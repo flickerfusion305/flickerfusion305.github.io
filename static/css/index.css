@@ -137,7 +137,7 @@ body {
 #teaser-video-section .publication-video {
   width: 60%;
   max-width: 480px; 
-  max-height: 270px;
+  max-height: 100px;
   position: relative;
   overflow: hidden;
   margin: 0 auto; 
