@@ -127,6 +127,22 @@ body {
   font-size: smaller;
 }
 
+.image-comparison {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image-comparison .item {
+  padding: 10px;
+}
+#display-images {
+  display: flex;
+  flex-direction: column;
+}
+
 #teaser-video-section {
   display: flex;
   justify-content: center;
