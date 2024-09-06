@@ -1,18 +1,37 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
 }
 
 video {
-  max-width: 700px;
+  width: 90%;
   border-radius: 25px;
 }
 
 .title {
   color: #000;
 }
-.publication-title {
+
+.subtitle {
   color: #000;
+  margin-bottom: 10px !important;
+}
+
+#abstract .subtitle {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.note p {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: left;
 }
 .image-comparison {
   display: flex;
@@ -43,14 +62,15 @@ video {
   color: #a0a0a0 !important;
 }
 
-#abstract {
-  width: 70%;
+#abstract .title {
+  font-size: 1.5em;
 }
 
 #flickerfusion-visual-demo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
 }
 
@@ -59,14 +79,19 @@ video {
   flex-direction: column;
   width: 40%;
   height: 100%;
+  text-align: left;
 }
 #baseline-comparison-demo {
   display: flex;
   flex-direction: column;
-  margin: 40px 0px;
+  margin: 40px auto;
 }
 
 @media screen and (max-width:1023px) {
+  .container {
+    width: 90%;
+  }
+
   #flickerfusion-visual-demo {
     flex-direction: column
   }
