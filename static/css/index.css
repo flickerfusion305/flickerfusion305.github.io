@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #000;
 }
 
@@ -22,12 +22,17 @@ video {
   font-size: 1.5em;
 }
 
+.hero.is-light {
+  padding: 2rem 0;
+}
 .container {
-  width: 70%;
+  width: 75%;
   text-align: center;
   margin: auto;
 }
-
+.section {
+  padding: 2rem 0;
+}
 .note p {
   font-size: 0.8em;
   font-style: italic;
@@ -48,7 +53,7 @@ video {
   overflow: hidden;
   width: 250px;
   height: 100%;
-  padding: 10px;
+  margin: 10px;
 }
 
 .image-comparison .item img {
@@ -62,6 +67,10 @@ video {
   color: #a0a0a0 !important;
 }
 
+.has-text-grey {
+  color: #a0a0a0 !important;
+}
+
 #abstract .title {
   font-size: 1.5em;
 }
@@ -71,7 +80,7 @@ video {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  gap: 20px;
 }
 
 #flickerfusion-visual-demo .left-container {
@@ -81,6 +90,13 @@ video {
   height: 100%;
   text-align: left;
 }
+
+#flickerfusion-visual-demo .right-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
 #baseline-comparison-demo {
   display: flex;
   flex-direction: column;
