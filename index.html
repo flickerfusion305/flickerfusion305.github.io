@@ -29,6 +29,8 @@
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" 
+  rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -91,30 +93,17 @@
     <div class="content has-text-justified">
       <p>
         Abstract environments in multi-agent reinforcement learning over-simplify real-world settings. To
-        close the gap between laboratory research and real-world deployment we present 6 unique envi-
-        ronments packaged in MPEV2, a successor to the highly popular Multi Particle Environments
-        (MPE)—enabling benchmarking of (i) dynamic entity (e.g. agents, obstacles) composition, (ii) intra-
-        trajectory (i.e., within an episode) entity additions, and (iii) out-of-domain generalization. Empirical
-        studies reveal significant weaknesses in existing methods under these real-world inspired circum-
-        stances. In response, we propose FLICKERFUSION, achieving state-of-the-art domain generalization
+        close the gap between laboratory research and real-world deployment we present 6 unique environments packaged in MPEV2, a successor to the highly popular Multi Particle Environments
+        (MPE)—enabling benchmarking of (i) dynamic entity (e.g. agents, obstacles) composition, (ii) intra-trajectory (i.e., within an episode) entity additions, and (iii) out-of-domain generalization. Empirical
+        studies reveal significant weaknesses in existing methods under these real-world inspired circumstances. In response, we propose FlickerFusion, achieving state-of-the-art domain generalization
         performance vis-à-vis (1) inference reward, and (2) uncertainty reduction. Relative to 11 baselines
-        FLICKERFUSION ranks first in 10/12 benchmarks, and commonly second. Moreover, FLICKERFUSION dramatically reduces uncertainty (standard deviation across seeds)—a desireable feature in
+        FlickerFusion ranks first in 10/12 benchmarks, and commonly second. Moreover, FlickerFusion dramatically reduces uncertainty (standard deviation across seeds)—a desireable feature in
         out-of-domain inference. 
       </p>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
-
-<!-- Note Section -->
-<section class="section has-text-left">
-  <div class="container is-max-desktop note">
-    <p class="has-text-grey">
-      Note: : All visual renderings are 20 episodes. The seed corresponding to the selected model is chosen blindly. Videos are recorded only once, therefore, not cherry picked.
-    </p>
-  </div>
-</section>
-<!-- End Note Section -->
 
 <!-- Text above teaser video -->
 <section class="section has-text-centered">
@@ -138,7 +127,7 @@
 <!-- End teaser video -->
 
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <source src="static/videos/teaser_video.mp4"
@@ -170,14 +159,20 @@
     </div>
   </div>
 </section>
+
 <section class="section">
+  <div class="container is-max-desktop note">
+    <p class="has-text-grey">
+      All visual renderings are 20 episodes. The seed corresponding to the selected model is chosen blindly. Videos are recorded only once, therefore, not cherry picked.
+    </p>
+  </div>
   <div id="baseline-comparison-demo" class="container">
-    <h2 class="subtitle is-4 has-text-weight-bold has-text-centered">FlickerFusion vs. Baselines Demo</h2>
+    <h2 class="subtitle is-4 has-text-weight-bold has-text-centered">FlickerFusion vs. Baselines Demo</h2>    
     <div class="image-comparison">
       <div class="item">
         <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
         <h2 class="normal-text has-text-centered">
-          Adversary Qmix-Attention OOD1 
+          Adversary FlickerFusion-Attention OOD1 
         </h2>
       </div>
       <div class="item">
@@ -191,7 +186,7 @@
       <div class="item">
         <img src="static/images/repel_qffood1 .gif" alt="MY ALT TEXT"/>
         <h2 class="normal-text has-text-centered">
-          Repel FlickerFusion OOD1 
+          Repel FlickerFusion-MLP OOD1 
         </h2>
       </div>
       <div class="item">
@@ -205,7 +200,7 @@
       <div class="item">
         <img src="static/images/tag_qattenood1.gif" alt="MY ALT TEXT"/>
         <h2 class="normal-text has-text-centered">
-          Tag Qatten OOD1 
+          Tag FlickerFusion-Attention OOD1 
         </h2>
       </div>
       <div class="item">

@@ -12805,7 +12805,7 @@ print {
 }
 
 .section {
-    padding: 1.5rem 1.5rem
+    padding: 2rem 1.5rem
 }
 
 @media screen and (min-width:1024px) {
@@ -12842,11 +12842,6 @@ print {
   padding-bottom: 3rem;
 }
 
-.teaser {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-
 .publication-banner {
   max-height: parent;
 }
@@ -12860,14 +12855,6 @@ print {
 }
 
 .publication-header .hero-body {
-}
-
-.publication-title {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.publication-authors {
-    font-family: Helvetica, Arial, sans-serif;
 }
 
 .publication-venue {
