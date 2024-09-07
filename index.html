@@ -143,95 +143,104 @@
       <h2 class="subtitle is-4 has-text-weight-bold">FlickerFusion Visualization Demo</h2>
       <p class="normal-text has-text-left">FlickerFusion is visualized from the perspective of a single agent (dark blue). Entities that are dropped out are set to 50% transparency.</p>
     </div>
-    <div class="image-comparison right-container">
-      <div class="item">
-        <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary FlickerFusion-Attention OOD1 
-        </h2>
+    <div class="right-container">
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
+        </div>
+        <div class="item">
+          <img src="static/images/adv_qattenood1_flicker.gif" alt="MY ALT TEXT"/>
+        </div>
       </div>
-      <div class="item">
-        <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary FlickerFusion-Attention OOD1 
-        </h2>
-      </div>
+      <h2 class="caption-text has-text-centered">
+        Adversary FlickerFusion-Attention OOD1 
+      </h2>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container is-max-desktop note">
-    <p class="has-text-grey">
-      All visual renderings are 20 episodes. The seed corresponding to the selected model is chosen blindly. Videos are recorded only once, therefore, not cherry picked.
-    </p>
-  </div>
   <div id="baseline-comparison-demo" class="container">
     <h2 class="subtitle is-4 has-text-weight-bold has-text-centered">FlickerFusion vs. Baselines Demo</h2>    
-    <div class="image-comparison">
-      <div class="item">
-        <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary FlickerFusion-Attention OOD1 
-        </h2>
+    <div class="container note">
+      <p class="has-text-grey">
+        All visual renderings are 20 episodes. The seed corresponding to the selected model is chosen blindly. Videos are recorded only once, therefore, not cherry picked.
+      </p>
+    </div>
+    <div class="env-container">
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/adv_qattenood1.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Adversary FlickerFusion-Attention OOD1 
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/adv_refilood1.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Adversary REFIL OOD1 
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <img src="static/images/adv_refilood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary REFIL OOD1 
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/adv_qattenood2.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary FlickerFusion-Attention OOD2 
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/adv_updetood2.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Adversary UPDeT OOD2 
-        </h2>
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/adv_qattenood2.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Adversary FlickerFusion-Attention OOD2 
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/adv_updetood2.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Adversary UPDeT OOD2 
+          </h2>
+        </div>
       </div>
     </div>
-    <div class="image-comparison">
-      <div class="item">
-        <img src="static/images/repel_qffood1 .gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Repel FlickerFusion-MLP OOD1 
-        </h2>
+    <div class="env-container">
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/repel_qffood1 .gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Repel FlickerFusion-MLP OOD1 
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/repel_camaood1.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Repel CAMA OOD1 
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <img src="static/images/repel_camaood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Repel CAMA OOD1 
-        </h2>
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/repel_qmixood2 .gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Repel FlickerFusion-MLP OOD2 
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/repel_refilood2.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Repel REFIL OOD2 
+          </h2>
+        </div>       
       </div>
-      <div class="item">
-        <img src="static/images/repel_qmixood2 .gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Repel FlickerFusion-MLP OOD2 
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/repel_refilood2.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Repel REFIL OOD2 
-        </h2>
-      </div>       
     </div>
-    <div class="image-comparison">
-      <div class="item">
-        <img src="static/images/tag_qattenood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Tag FlickerFusion-Attention OOD1 
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/tag_updetood1.gif" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
-          Tag UPDET OOD1 
-        </h2>
+    <div class="env-container">
+      <div class="image-comparison">
+        <div class="item">
+          <img src="static/images/tag_qattenood1.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Tag FlickerFusion-Attention OOD1 
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/tag_updetood1.gif" alt="MY ALT TEXT"/>
+          <h2 class="caption-text has-text-centered">
+            Tag UPDET OOD1 
+          </h2>
+        </div>
       </div>
     </div>
   </div>
