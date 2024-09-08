@@ -54,7 +54,7 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
-          <div class="column has-text-centered">
+          <div class="column">
             <h1 class="title is-2 publication-title">Benchmark and Method for Domain Generalizing
               Multi-agent Reinforcement Learning</h1>
             <div class="is-size-5 publication-authors">
@@ -64,7 +64,7 @@
               </span>
             </div>
 
-                  <div class="column has-text-centered">
+                  <div class="column">
                     <div class="publication-links">
 
                   <!-- Github link -->
@@ -88,7 +88,7 @@
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-centered has-shorter-width has-text-centered" id="abstract">
+  <div class="container is-centered has-shorter-width" id="abstract">
     <h2 class="subtitle">Abstract</h2>
     <div class="content has-text-justified">
       <p>
@@ -106,7 +106,7 @@
 <!-- End paper abstract -->
 
 <!-- Text above teaser video -->
-<section class="section has-text-centered">
+<section class="section">
   <div class="container has-shorter-width">
     <h2 class="subtitle is-4 has-text-weight-bold">Flicker Fusion Phenomena Analogy Demo</h2>
     <p class="normal-text has-text-left has-text-dark-grey">4 white circles represent visible entities. As the flicker frequency increases, we are able to emulate an aggregate view of all 8 entities (circles)</p>
@@ -141,21 +141,27 @@
   <div id="flickerfusion-visual-demo" class="container">
     <div class="left-container">
       <h2 class="subtitle is-4 has-text-weight-bold">FlickerFusion Visualization Demo</h2>
-      <p class="normal-text has-text-left">FlickerFusion is visualized from the perspective of a single agent (dark blue). Entities that are dropped out are set to 50% transparency.</p>
+      <p class="normal-text has-text-left">FlickerFusion is visualized from the perspective of a single agent (dark blue). Entities that are dropped out are set to 80% transparency.</p>
     </div>
     <div class="right-container">
       <div class="image-comparison">
         <div class="item">
           <img src="static/images/adv_qattenood1_flicker.gif" alt="MY ALT TEXT"/>
-          <h2 class="caption-text has-text-centered">
-            Adversary FlickerFusion-Attention OOD1 
+          <h2 class="caption-text">
+            FlickerFusion-Attention OOD1 
           </h2>
+          <h2 class="caption-text env-label">
+            Adversary
+          </h2>  
         </div>
         <div class="item">
           <img src="static/images/guard_qmixood2_flicker.gif" alt="MY ALT TEXT"/>
-          <h2 class="caption-text has-text-centered">
-            Guard FlickerFusion-MLP OOD2
+          <h2 class="caption-text">
+            FlickerFusion-MLP OOD2
           </h2>
+          <h2 class="caption-text env-label">
+            Guard
+          </h2>  
         </div>
       </div>
     </div>
@@ -164,7 +170,7 @@
 
 <section class="section">
   <div id="baseline-comparison-demo" class="container">
-    <h2 class="subtitle is-4 has-text-weight-bold has-text-centered">FlickerFusion vs. Baselines Demo</h2>    
+    <h2 class="subtitle is-4 has-text-weight-bold">FlickerFusion vs. Baselines Demo</h2>    
     <div class="container note">
       <p class="has-text-grey">
         All visual renderings are 20 episodes on loop. The seed corresponding to the selected model is chosen blindly. Videos are recorded only once, therefore, not cherry picked.
@@ -176,76 +182,101 @@
           Out-of-Domain 1
         </p>
         <div class="group-box">
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/adv_qattenood1.gif" loop=infinite alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Adversary FlickerFusion-Attention
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/adv_qattenood1.gif" loop=infinite alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-Attention
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/adv_refilood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  REFIL
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/adv_refilood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Adversary REFIL
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Adversary
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/repel_qmixood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Repel FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/repel_qmixood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/repel_camaood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  CAMA
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/repel_camaood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Repel CAMA
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Repel
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/tag_qattenood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Tag FlickerFusion-Attention
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/tag_qattenood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-Attention
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/tag_updetood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  UPDeT
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/tag_updetood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Tag UPDET
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Tag
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/spread_qmixood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Spread FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/spread_qmixood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/spread_acormood1.gif" alt="Spread ACORM OOD1"/>
+                <h2 class="caption-text">
+                  ACORM
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/spread_acormood1.gif" alt="Spread ACORM OOD1"/>
-              <h2 class="caption-text has-text-centered">
-                Spread ACORM
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Spread
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/guard_qmixood1.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Guard FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/guard_qmixood1.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/guard_odisood1.gif" alt="Guard ODIS OOD1"/>
+                <h2 class="caption-text">
+                  ODIS
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/guard_odisood2.gif" alt="Guard ODIS OOD2"/>
-              <h2 class="caption-text has-text-centered">
-                Guard ODIS
-              </h2>
-            </div>
-          </div>
+            <h2 class="caption-text env-label">
+              Guard
+            </h2>  
+          </div>   
         </div>
       </div>
       <div class="ood-container">
@@ -253,76 +284,101 @@
           Out-of-Domain 2
         </p>
         <div class="group-box">
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/adv_qattenood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Adversary FlickerFusion-Attention
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/adv_qattenood2.gif" loop=infinite alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-Attention
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/adv_updetood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  UPDeT
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/adv_updetood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Adversary UPDeT
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Adversary
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/repel_qmixood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Repel FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/repel_qmixood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/repel_refilood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  REFIL
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/repel_refilood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Repel REFIL
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Repel
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/tag_qattenood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Tag FlickerFusion-Attention
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/tag_qattenood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-Attention
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/tag_acormood2.gif" alt="Tag ACORM OOD2"/>
+                <h2 class="caption-text">
+                  ACORM
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/tag_acormood2.gif" alt="Tag ACORM"/>
-              <h2 class="caption-text has-text-centered">
-                Tag ACORM
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Tag
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/spread_qmixood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Spread FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/spread_qmixood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/spread_odisood2.gif" alt="Spread ODIS OOD2"/>
+                <h2 class="caption-text">
+                  ODIS
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/spread_odisood2.gif" alt="Spread ODIS OOD2"/>
-              <h2 class="caption-text has-text-centered">
-                Spread ODIS
-              </h2>
-            </div>
+            <h2 class="caption-text env-label">
+              Spread
+            </h2>
           </div>
-          <div class="image-comparison">
-            <div class="item">
-              <img src="static/images/guard_qmixood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Guard FlickerFusion-MLP
-              </h2>
+          <div class="image-comparison-box">
+            <div class="image-comparison">
+              <div class="item">
+                <img src="static/images/guard_qmixood2.gif" alt="MY ALT TEXT"/>
+                <h2 class="caption-text">
+                  FlickerFusion-MLP
+                </h2>
+              </div>
+              <div class="item">
+                <img src="static/images/guard_camaood2.gif" alt="Guard ODIS OOD1"/>
+                <h2 class="caption-text">
+                  CAMA
+                </h2>
+              </div>
             </div>
-            <div class="item">
-              <img src="static/images/guard_camaood2.gif" alt="MY ALT TEXT"/>
-              <h2 class="caption-text has-text-centered">
-                Guard CAMA
-              </h2>
-            </div>
-          </div>
+            <h2 class="caption-text env-label">
+              Guard
+            </h2>  
+          </div>   
         </div>
       </div>
     </div>
@@ -337,35 +393,35 @@
        <div class="item"> -->
         <!-- Your image here -->
         <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
+        <h2 class="normal-text">
           First image description.
         </h2>
       </div>
       <div class="item"> -->
         <!-- Your image here -->
         <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
+        <h2 class="normal-text">
           Second image description.
         </h2>
       </div>
       <div class="item"> -->
         <!-- Your image here -->
         <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="normal-text has-text-centered">
+        <h2 class="normal-text">
          Third image description.
        </h2>
      </div>
      <div class="item"> -->
       <!-- Your image here -->
       <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="normal-text has-text-centered">
+      <h2 class="normal-text">
         Fourth image description.
       </h2>
     </div> -->
 
     <!-- <div class="item">
       <img src="static/images/rendering.gif" alt="GIF ALT TEXT" />
-      <h2 class="normal-text has-text-centered">
+      <h2 class="normal-text">
         GIF.
       </h2>
     </div>
@@ -385,7 +441,7 @@
     <div class="container"> -->
       <!-- Paper video. -->
       <!-- <h2 class="subtitle is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered">
 
         <div class="column is-two-fifths">
           <div class="publication-video"> -->
