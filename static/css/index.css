@@ -107,7 +107,7 @@ video {
   height: 100%;
 }
 
-.video-comparison, .image-comparison .item img {
+.video-comparison, .image-comparison video {
   width: 200px !important;
   max-width: 40vw;
   max-height: 40vw;
