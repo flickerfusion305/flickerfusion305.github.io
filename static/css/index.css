@@ -193,7 +193,7 @@ video {
 }
 
 #flickerfusion-visual-demo .right-container .video-comparison-container video {
-  width: 400px;
+  width: 400px !important;
   max-width: 100%;
   height: auto;
   border-radius: 10px; 
