@@ -193,12 +193,12 @@ video {
 }
 
 .video-comparison-container video {
-  width: 400px; 
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; 
-  display: block;
-  margin: 0 auto; 
+  width: 400px !important; 
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 10px !important; 
+  display: block !important;
+  margin: 0 auto !important; 
 }
 
 @media screen and (max-width:1023px) {
