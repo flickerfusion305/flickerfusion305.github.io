@@ -178,6 +178,29 @@ video {
   margin: 40px auto;
 }
 
+.video-comparison-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: top;
+  box-sizing: border-box;
+  height: max-content;
+  width: max-content;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px 20px 10px;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.video-comparison-container video {
+  width: 400px; 
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  display: block;
+  margin: 0 auto; 
+}
+
 @media screen and (max-width:1023px) {
   .container {
     width: 90%;
