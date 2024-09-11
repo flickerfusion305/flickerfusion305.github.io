@@ -178,7 +178,7 @@ video {
   margin: 40px auto;
 }
 
-.video-comparison-container {
+#flickerfusion-visual-demo .right-container .video-comparison-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -192,13 +192,13 @@ video {
   margin: 0 auto; /* 가운데 정렬 */
 }
 
-.video-comparison-container video {
-  width: 400px !important; 
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 10px !important; 
-  display: block !important;
-  margin: 0 auto !important; 
+#flickerfusion-visual-demo .right-container .video-comparison-container video {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  display: block;
+  margin: 0 auto; 
 }
 
 @media screen and (max-width:1023px) {
