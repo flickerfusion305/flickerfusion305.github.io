@@ -107,14 +107,17 @@ video {
   height: 100%;
 }
 
-.image-comparison .item img {
+.video-comparison, .image-comparison .item img {
   width: 200px !important;
   max-width: 40vw;
   max-height: 40vw;
   height: 200px !important;
+  border-radius: 25px;
   font-size: 0.6em;
   color: #0000ff;
   font-style: italic;
+  display: block;
+  margin: 0 auto;
 }
 
 .caption-text {
@@ -151,10 +154,20 @@ video {
   text-align: left;
 }
 
-#flickerfusion-visual-demo .right-container {
+/* #flickerfusion-visual-demo .right-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+} */
+
+#flickerfusion-visual-demo .right-container video {
+  width: 200px !important;
+  max-width: 40vw;
+  max-height: 40vw;
+  height: 200px !important;
+  border-radius: 25px; 
+  display: block;
+  margin: 0 auto; 
 }
 
 #baseline-comparison-demo .render-display{
