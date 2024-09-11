@@ -161,7 +161,7 @@ video {
 } */
 
 #flickerfusion-visual-demo .right-container video {
-  width: 200px !important;
+  /* width: 200px !important; */
   max-width: 40vw;
   max-height: 40vw;
   height: 200px !important;
