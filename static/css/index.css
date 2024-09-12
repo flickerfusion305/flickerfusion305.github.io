@@ -224,4 +224,21 @@ video {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width:1024px) and (max-width:1215px) {
+  .container{
+    width: 90%;
+  }
+  .has-shorter-width {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width:1216px) {
+  .container{
+    min-width: 1024px;
+  }
+  .has-shorter-width {
+    min-width: 768px;
+  }
+}
 
