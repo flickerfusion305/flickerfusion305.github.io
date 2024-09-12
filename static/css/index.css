@@ -181,14 +181,12 @@ video {
 #flickerfusion-visual-demo .right-container .video-comparison-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  align-items: top;
   box-sizing: border-box;
   height: max-content;
   width: max-content;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  padding: 20px 20px 10px;
+  /* background-color: #f5f5f5; */
+  /* border-radius: 10px; */
+  /* padding: 20px 20px 10px; */
   margin: 0 auto; /* 가운데 정렬 */
 }
 
@@ -201,6 +199,10 @@ video {
   margin: 0 auto; 
 }
 
+#end-container {
+  margin: 20px auto;
+  color: rgba(0, 0, 0, .7);
+}
 @media screen and (max-width:1023px) {
   .container {
     width: 90%;
