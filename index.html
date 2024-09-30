@@ -24,8 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Benchmark and Method for Domain Generalizing
-    Multi-agent Reinforcement Learning</title>
+  <title>FlickerFusion: Intra-trajectory Domain Generalizing\\Multi-Agent Reinforcement Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon_ai.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -92,13 +91,22 @@
     <h2 class="subtitle">Abstract</h2>
     <div class="content has-text-justified">
       <p>
-        Abstract environments in multi-agent reinforcement learning over-simplify real-world settings. To
-        close the gap between laboratory research and real-world deployment we present 6 unique environments packaged in MPEv2, a successor to the highly popular Multi Particle Environments
-        (MPE)—enabling benchmarking of (i) dynamic entity (e.g. agents, obstacles) composition, (ii) intra-trajectory (i.e., within an episode) entity additions, and (iii) out-of-domain generalization. Empirical
-        studies reveal significant weaknesses in existing methods under these real-world inspired circumstances. In response, we propose FlickerFusion, achieving state-of-the-art domain generalization
-        performance vis-à-vis (1) inference reward, and (2) uncertainty reduction. Relative to 11 baselines
-        FlickerFusion ranks first in 10/12 benchmarks, and commonly second. Moreover, FlickerFusion dramatically reduces uncertainty (standard deviation across seeds)—a desireable feature in
-        out-of-domain inference. 
+        Multi-agent reinforcement learning has demonstrated significant potential in addressing complex
+        cooperative tasks across various real-world applications. However, existing MARL approaches often
+        rely on the restrictive assumption that the number of entities (e.g., agents, obstacles) remains constant
+        between training and inference. This overlooks scenarios where entities are dynamically removed or
+        added during the inference trajectory—a common occurrence in real-world environments like search
+        and rescue missions and dynamic combat situations. In this paper, we tackle the challenge of intra-
+        trajectory dynamic entity composition under zero-shot out-of-domain (OOD) generalization,
+        where such dynamic changes cannot be anticipated beforehand. Our empirical studies reveal that
+        existing MARL methods suffer significant performance degradation and increased uncertainty in
+        these scenarios. In response, we propose FLICKERFUSION, a novel OOD generalization method that
+        acts as a universally applicable augmentation technique for MARL backbone methods. Our results
+        show that FLICKERFUSION not only achieves superior inference rewards but also uniquely reduces
+        uncertainty vis-à-vis the backbone, compared to existing methods. For standardized evaluation, we
+        introduce MPEV2, an enhanced version of Multi Particle Environments (MPE), consisting of 12
+        benchmarks. Benchmarks, implementations, and trained models are organized and open-sourced at
+        flickerfusion305.github.io, accompanied by ample demo video renderings. 
       </p>
     </div>
   </div>
