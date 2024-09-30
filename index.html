@@ -54,7 +54,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column">
-            <h1 class="title is-2 publication-title">FlickerFusion: Intra-trajectory Domain Generalizing Multi-Agent Reinforcement Learning</h1>
+            <h1 class="title is-2 publication-title">FlickerFusion: Intra-trajectory Domain Generalizing Multi-agent Reinforcement Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -94,16 +94,16 @@
         cooperative tasks across various real-world applications. However, existing MARL approaches often
         rely on the restrictive assumption that the number of entities (e.g., agents, obstacles) remains constant
         between training and inference. This overlooks scenarios where entities are dynamically removed or
-        added during the inference trajectory—a common occurrence in real-world environments like search
-        and rescue missions and dynamic combat situations. In this paper, we tackle the challenge of intra-
-        trajectory dynamic entity composition under zero-shot out-of-domain (OOD) generalization,
+        <i>added during</i> the inference trajectory—a common occurrence in real-world environments like search
+        and rescue missions and dynamic combat situations. In this paper, we tackle the challenge of 
+        <b>intra-trajectory dynamic entity composition</b> under zero-shot <b>out-of-domain (OOD) generalization</b>,
         where such dynamic changes cannot be anticipated beforehand. Our empirical studies reveal that
-        existing MARL methods suffer significant performance degradation and increased uncertainty in
-        these scenarios. In response, we propose FLICKERFUSION, a novel OOD generalization method that
-        acts as a universally applicable augmentation technique for MARL backbone methods. Our results
-        show that FLICKERFUSION not only achieves superior inference rewards but also uniquely reduces
+        existing MARL methods suffer <i>significant</i> performance degradation and increased uncertainty in
+        these scenarios. In response, we propose FlickerFusion, a novel OOD generalization method that
+        acts as a <i><universally</i> applicable augmentation technique for MARL backbone methods. Our results
+        show that FlickerFusion not only achieves superior inference rewards but also <i>uniquely</i> reduces
         uncertainty vis-à-vis the backbone, compared to existing methods. For standardized evaluation, we
-        introduce MPEV2, an enhanced version of Multi Particle Environments (MPE), consisting of 12
+        introduce MPEv2, an enhanced version of Multi Particle Environments (MPE), consisting of 12
         benchmarks. Benchmarks, implementations, and trained models are organized and open-sourced at
         flickerfusion305.github.io, accompanied by ample demo video renderings. 
       </p>
