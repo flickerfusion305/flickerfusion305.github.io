@@ -96,11 +96,11 @@
         between training and inference. This overlooks scenarios where entities are dynamically removed or
         <i>added during</i> the inference trajectory—a common occurrence in real-world environments like search
         and rescue missions and dynamic combat situations. In this paper, we tackle the challenge of 
-        <b>intra-trajectory dynamic entity composition</b> under zero-shot <b>out-of-domain (OOD) generalization</b>,
+        intra-trajectory dynamic entity composition under zero-shot out-of-domain (OOD) generalization,
         where such dynamic changes cannot be anticipated beforehand. Our empirical studies reveal that
         existing MARL methods suffer <i>significant</i> performance degradation and increased uncertainty in
         these scenarios. In response, we propose FlickerFusion, a novel OOD generalization method that
-        acts as a <i>universally</i> applicable augmentation technique for MARL backbone methods. FLICKERFUSION stochastically drops out parts
+        acts as a <i>universally</i> applicable augmentation technique for MARL backbone methods. FlickerFusion stochastically drops out parts
         of the observation space, emulating being in-domain when inferenced OOD. The results
         show that FlickerFusion not only achieves superior inference rewards but also <i>uniquely</i> reduces
         uncertainty vis-à-vis the backbone, compared to existing methods. Benchmarks, implementations, and trained models are organized and open-sourced at
