@@ -100,11 +100,10 @@
         where such dynamic changes cannot be anticipated beforehand. Our empirical studies reveal that
         existing MARL methods suffer <i>significant</i> performance degradation and increased uncertainty in
         these scenarios. In response, we propose FlickerFusion, a novel OOD generalization method that
-        acts as a <i>universally</i> applicable augmentation technique for MARL backbone methods. Our results
+        acts as a <i>universally</i> applicable augmentation technique for MARL backbone methods. FLICKERFUSION stochastically drops out parts
+        of the observation space, emulating being in-domain when inferenced OOD. The results
         show that FlickerFusion not only achieves superior inference rewards but also <i>uniquely</i> reduces
-        uncertainty vis-à-vis the backbone, compared to existing methods. For standardized evaluation, we
-        introduce MPEv2, an enhanced version of Multi Particle Environments (MPE), consisting of 12
-        benchmarks. Benchmarks, implementations, and trained models are organized and open-sourced at
+        uncertainty vis-à-vis the backbone, compared to existing methods. Benchmarks, implementations, and trained models are organized and open-sourced at
         flickerfusion305.github.io, accompanied by ample demo video renderings. 
       </p>
     </div>
